@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USWA Public School - Excellence in Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="nav-brand">
+                <div class="nav-logo">
+                    <img src="school_logo.jpg" alt="USWA Public School Logo">
+                </div>
+                <div class="nav-text">
+                    <h1>USWA Public School</h1>
+                    <p>Rahmat-ul-lil-Aalameen Trust</p>
+                </div>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#admissions" class="nav-link">Admissions</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="btn-nav btn-login" onclick="showLogin()">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <button class="btn-nav btn-register" onclick="showRegister()">
+                    <i class="fas fa-user-plus"></i> Register
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-graduation-cap"></i>
+                    Admissions Open 2026–27
+                </div>
+                <h1 class="hero-title">USWA Public School</h1>
+                <p class="hero-subtitle">English Medium · Shahabad, Karnataka</p>
+                <p class="hero-motto">"Example of Morality and Character"</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openModal()">
+                        <i class="fas fa-edit"></i> Apply Now
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('features')">
+                        <i class="fas fa-arrow-down"></i> Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Students Enrolled</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Qualified Teachers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Board Pass Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="features-title">Why Choose USWA Public School</h2>
+                <p class="features-description">Discover what makes our institution the perfect choice for your child's education and development</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="feature-title">Academic Excellence</h3>
+                    <p class="feature-description">Rigorous English-medium curriculum designed to nurture critical thinking from Pre-Nursery to Class 10.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <h3 class="feature-title">Moral Education</h3>
+                    <p class="feature-description">Grounded in Islamic values and ethics, we shape students into individuals of strong character and integrity.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="feature-title">Co-Curricular Activities</h3>
+                    <p class="feature-description">Sports, debates, art, and science competitions that develop well-rounded, confident young leaders.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="feature-title">Expert Faculty</h3>
+                    <p class="feature-description">Highly qualified and experienced teachers dedicated to personalised student growth and holistic development.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="feature-title">Modern Facilities</h3>
+                    <p class="feature-description">Well-equipped science labs, library, and computer centre for hands-on learning experiences.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="feature-title">Charitable Trust</h3>
+                    <p class="feature-description">Run under Rahmat-ul-lil-Aalameen Trust, committed to affordable quality education for every child.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About USWA Public School</h2>
+                    <p>USWA Public School is an English-medium institution established under the Rahmat-ul-lil-Aalameen Educational & Charitable Trust (R), located Near Govt. Urdu School, ABL Housing Society, Shantnagar, BHANKUR, Shahabad – 585228.</p>
+                    <p>Our institution provides a comprehensive educational experience that combines academic excellence with moral and ethical development. We believe in nurturing young minds to become responsible citizens who contribute positively to society.</p>
+                    <p>From Pre-Nursery to Class 10, USWA offers a supportive learning environment that respects every student's unique potential and fosters their overall development.</p>
+                    <div class="about-quote">
+                        "Example of Morality and Character"
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="about-logo">
+                        <img src="school_logo.jpg" alt="USWA Public School">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section class="admissions" id="admissions">
+        <div class="container">
+            <div class="admissions-header">
+                <h2 class="admissions-title">Admissions Process 2026–27</h2>
+                <p class="admissions-description">Take the first step towards your child's bright future with our streamlined admission process</p>
+            </div>
+
+            <div class="admissions-process">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Enquiry</h3>
+                    <p class="step-description">Call 9380525905 or email ups.school2026@gmail.com to enquire about available seats.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Apply Online</h3>
+                    <p class="step-description">Fill the online application form with birth certificate, previous results, and passport photos.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Entrance Test</h3>
+                    <p class="step-description">Students appear for a simple oral or written assessment based on their class level.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Confirmation</h3>
+                    <p class="step-description">Upon selection, complete fee payment and collect student ID and timetable.</p>
+                </div>
+            </div>
+
+            <div class="admissions-cta">
+                <button class="btn-admissions" onclick="openModal()">
+                    <i class="fas fa-graduation-cap"></i> Apply for Admission Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2 class="gallery-title">School Gallery</h2>
+                <p class="gallery-description">Take a glimpse into the vibrant life at USWA Public School through our photo gallery</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openGalleryModal(0)">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="School Building">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title-overlay">School Campus</h3>
+                        <p class="gallery-description-overlay">Our modern campus facilities designed for optimal learning</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openGalleryModal(1)">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Classroom">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title-overlay">Smart Classrooms</h3>
+                        <p class="gallery-description-overlay">Interactive learning spaces equipped with modern technology</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openGalleryModal(2)">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop" alt="Library">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title-overlay">School Library</h3>
+                        <p class="gallery-description-overlay">A vast collection of books and digital resources for research</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openGalleryModal(3)">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop" alt="Sports Activities">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title-overlay">Sports & Activities</h3>
+                        <p class="gallery-description-overlay">Physical education and extracurricular activities for holistic development</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openGalleryModal(4)">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop" alt="Science Lab">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title-overlay">Science Laboratory</h3>
+                        <p class="gallery-description-overlay">Hands-on experiments and practical learning experiences</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openGalleryModal(5)">
+                    <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=300&fit=crop" alt="Assembly">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title-overlay">Morning Assembly</h3>
+                        <p class="gallery-description-overlay">Daily assembly fostering discipline and school spirit</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openGalleryModal(6)">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop" alt="Art & Craft">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title-overlay">Art & Craft Classes</h3>
+                        <p class="gallery-description-overlay">Creative expression and artistic development programs</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openGalleryModal(7)">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=300&fit=crop" alt="Computer Lab">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title-overlay">Computer Laboratory</h3>
+                        <p class="gallery-description-overlay">Digital literacy and computer skills training</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="contact-title">Contact Information</h2>
+                <p class="contact-description">We're here to help you with any questions about admissions or our programs</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-title">Phone Numbers</h3>
+                    <div class="contact-info">
+                        <p><strong>Rahim:</strong> <a href="tel:+917090396127">+91 70903 96127</a></p>
+                        <p><strong>Shakeel:</strong> <a href="tel:+918904915905">+91 89049 15905</a></p>
+                        <p><strong>General:</strong> <a href="tel:+919380525905">9380525905</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email Address</h3>
+                    <div class="contact-info">
+                        <p><a href="mailto:ups.school2026@gmail.com">ups.school2026@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="contact-title">School Hours</h3>
+                    <div class="contact-info">
+                        <p>Monday – Saturday</p>
+                        <p>8:00 AM – 2:30 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Address</h3>
+                    <div class="contact-info">
+                        <p>Near Govt. Urdu School</p>
+                        <p>ABL Housing Society</p>
+                        <p>BHANKUR, Shahabad – 585228</p>
+                        <p>Karnataka, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h3 style="color: var(--secondary); text-align: center; margin-bottom: 1rem; font-family: 'Playfair Display', serif;">📍 Our Location — Shahabad, Karnataka</h3>
+                <div class="map-container">
+                    <iframe src="https://maps.google.com/maps?q=Shahabad,Kalaburagi,Karnataka,585228&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="USWA Public School Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="school_logo.jpg" alt="USWA Public School Logo">
+                        </div>
+                        <div class="footer-brand-text">
+                            <h3>USWA Public School</h3>
+                            <p>Rahmat-ul-lil-Aalameen Trust</p>
+                        </div>
+                    </div>
+                    <p>"Example of Morality and Character"</p>
+                    <p>English Medium School · Shahabad, Karnataka</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#features">Features</a>
+                        <a href="#about">About</a>
+                        <a href="#admissions">Admissions</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Rahim: +91 70903 96127</p>
+                    <p>Shakeel: +91 89049 15905</p>
+                    <p>General: 9380525905</p>
+                    <p>ups.school2026@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Address</h4>
+                    <p>Near Govt. Urdu School</p>
+                    <p>ABL Housing Society, BHANKUR</p>
+                    <p>Shahabad – 585228, Karnataka</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 USWA Public School · Rahmat-ul-lil-Aalameen Educational & Charitable Trust (R)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admission Modal -->
+    <div class="modal-overlay" id="applyModal" onclick="closeModalOutside(event)">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2>Admission Application</h2>
+                <p>USWA Public School · 2026–27</p>
+            </div>
+            <div class="modal-body">
+                <div id="applyForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Student's Full Name *</label>
+                            <input type="text" class="form-input" id="f_name" placeholder="Enter full name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Date of Birth *</label>
+                            <input type="date" class="form-input" id="f_dob" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Applying for Class *</label>
+                            <select class="form-select" id="f_class">
+                                <option value="">-- Select Class --</option>
+                                <option>Pre-Nursery</option>
+                                <option>LKG</option>
+                                <option>UKG</option>
+                                <option>Class 1</option>
+                                <option>Class 2</option>
+                                <option>Class 3</option>
+                                <option>Class 4</option>
+                                <option>Class 5</option>
+                                <option>Class 6</option>
+                                <option>Class 7</option>
+                                <option>Class 8</option>
+                                <option>Class 9</option>
+                                <option>Class 10</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Gender *</label>
+                            <select class="form-select" id="f_gender">
+                                <option value="">-- Select --</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Father's Name *</label>
+                            <input type="text" class="form-input" id="f_father" placeholder="Father's full name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mother's Name</label>
+                            <input type="text" class="form-input" id="f_mother" placeholder="Mother's full name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Contact Number *</label>
+                            <input type="tel" class="form-input" id="f_phone" placeholder="Mobile number" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" id="f_email" placeholder="Email (optional)" />
+                        </div>
+                        <div class="form-group full-width">
+                            <label class="form-label">Residential Address *</label>
+                            <textarea class="form-textarea" id="f_address" placeholder="Full address..."></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <label class="form-label">Previous School (if any)</label>
+                            <input type="text" class="form-input" id="f_prevschool" placeholder="Previous school name" />
+                        </div>
+                    </div>
+                    <p id="form-err" style="color: #dc2626; font-size: 14px; margin: 1rem 0; display: none;">⚠️ Please fill in all required fields marked with *</p>
+                    <button class="form-submit" onclick="submitForm()">🎓 Submit Application</button>
+                </div>
+
+                <div class="success-message" id="successMsg">
+                    <div class="success-icon">✅</div>
+                    <h3 class="success-title">Application Submitted!</h3>
+                    <p class="success-text">Thank you! Your application for <strong id="s_name"></strong> has been received.<br>Our admissions team will contact you at <strong id="s_phone"></strong> shortly.</p>
+                    <br>
+                    <p style="font-size: 14px; color: #666;">📞 Rahim: +91 7090396127 | Shakeel: +91 8904915905<br>📧 ups.school2026@gmail.com</p>
+                    <br>
+                    <button class="form-submit" onclick="closeModal()" style="max-width: 200px; margin: 0 auto; display: block;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal" onclick="closeGalleryModal()">
+        <div class="gallery-modal-content">
+            <button class="gallery-modal-close" onclick="closeGalleryModal()">×</button>
+            <img id="galleryModalImg" src="" alt="Gallery Image">
+            <div class="gallery-modal-info">
+                <h3 id="galleryModalTitle" class="gallery-modal-title"></h3>
+                <p id="galleryModalDescription" class="gallery-modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
